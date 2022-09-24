@@ -1,0 +1,48 @@
+Write a Python Program to put the even and odd elements in a list into two different lists.
+
+Input & Output Format:
+
+Input consists of one integer and one list.
+
+First input consists of the size of the list.
+
+Second input consists of the elements based on the size.
+
+Output consists of two lists.
+
+First list consists of all the even numbers in the list.
+
+Second list consists of all the odd numbers in the list.
+
+Sample Input & Output:
+
+5
+
+1
+
+2
+
+3
+
+6
+
+5
+
+The even list [2, 6]
+
+#python
+n=int(input("n:"))
+l=[]
+e=[]
+o=[]
+for i in range(1,n+1):
+    l.append(int(input()))
+for j in l:
+    if j%2==0:
+        e.append(j)
+    else:
+        o.append(j)
+print("The even list",e)
+print("The odd list",o)
+        
+        
